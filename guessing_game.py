@@ -1,8 +1,6 @@
 import random
 
 
-def start_game(highscore=0):
-
     def get_guess():
       while True:
         try:
@@ -18,7 +16,7 @@ def start_game(highscore=0):
 
       return user_guess
 
-
+def start_game(highscore=0):
     print('Welcome to the number guessing game!' + ((' The HIGHSCORE is %s!' % highscore) if highscore != 0 else ''))
     answer = random.randint(1,10)
     attempts = 0
